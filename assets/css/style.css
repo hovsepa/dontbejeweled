@@ -33,12 +33,12 @@ h1 {
   margin: 1em 0 1em 0;
 }
 
-#points-added {
+#points-added-one {
   display: none;
-  position: relative;
-  margin: 0 auto;
+  position: fixed;
+  margin: 1em;
   color: #E96763;
-  font-size: 2em;
+  font-size: 3.8em;
   z-index: 1;
 }
 
@@ -101,7 +101,7 @@ section {
   font-size: 1.2em;
 }
 
-#score-circle-target {
+.score-circle-target {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -109,6 +109,19 @@ section {
   position: relative;
   float: left;
   margin: 0 5% 0 29%;
+}
+
+.score-circle-target-click {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+  border: solid 5px #E96763;
+  position: relative;
+  float: left;
+  margin: 0 5% 0 29%;
+  color: white;
+  background-color: #E96763;
+  font-size: 1.4em;
 }
 
 .target-score-text {
@@ -119,7 +132,7 @@ section {
   color: #4590EE;
 }
 
-#score-circle-current {
+.score-circle-current {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -129,6 +142,22 @@ section {
   width: 150px;
   height: 150px;
   margin: 0 0 0 1%;
+}
+
+.score-circle-current-click {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+  border: solid 5px #4590EE;
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 0 1%;
+  background-color: #4590EE;
+  color: white;
+  padding-top: 1.6em;
+  padding-left: -2em;
 }
 
 .target-and-current {
