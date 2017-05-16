@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Don't Be Jeweled</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa:300,400,500,600,700" rel="stylesheet">
+
+  </head>
+  <body>
+    <head>
+      <div class="directions">
+        <h1>Don't Be Jeweled</h1>
+        <p><span id="how-to-play">How to Play:</span> Each gem has a hidden value. Combine values to reach the target score.</p>
+      </div>
+    </head>
+    <section class="container">
+      <div>
+        <img class="jewels" id="crystal-one" src="assets/img/ruby.svg" alt="">
+        <p id="points-added"></p>
+      </div>
+      <div>
+        <img class="jewels" id="crystal-two" src="assets/img/amethyst.svg" alt="">
+      </div>
+      <div>
+        <img class="jewels" id="crystal-three" src="assets/img/crystal.svg" alt="">
+      </div>
+      <div>
+        <img class="jewels" id="crystal-four" src="assets/img/diamond.svg" alt="">
+      </div>
+    </section>
+    <section class="target-and-current">
+      <div class="target-score-text">
+        <div id="score-circle-target" class="center score-keeper-text">
+          <p > Target Score</p>
+          <p id="target-score"></p>
+        </div>
+      </div>
+      <div class="current-score-text">
+        <div id="score-circle-current" class="center score-keeper-text">
+          <p>Current Score</p>
+          <p id="current-score"></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p id="quote">But everybody's like Cristal, Maybach, diamonds on your timepiece. Jet planes, islands, tigers on a gold leash. We don't care. <span id="quote-author">- Lorde</span></p>
+    </section>
+    <section>
+      <div id="wins-margins">
+        <p id="wins"></p>
+        <p class="score-keeper-wins">Wins</p>
+      </div>
+      <div id="losses-margins" class="">
+        <p id="losses"></p>
+        <p class="score-keeper-losses">Losses</p>
+      </div>
+    </section>
+    <script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="assets/js/game.js" charset="utf-8"></script>
+    <!-- <script src="assets/js/snap.svg-0.5.1" charset="utf-8"></script> -->
+  </body>
+</html>
