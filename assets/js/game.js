@@ -30,6 +30,23 @@ var quotes = [
 ];
 
 // the functions
+
+function swapCircleStyle () {
+  setTimeout(function() {
+    $('.score-circle-current-click')
+    .removeClass('score-circle-current-click')
+    .addClass('score-circle-current');
+    $('#current-score-text-val').show();
+  }, 300);
+}
+
+function swapCircleStyleBack () {
+  $('.score-circle-current')
+    .removeClass('score-circle-current')
+    .addClass('score-circle-current-click');
+    $('#current-score-text-val').hide();
+}
+
 $('#crystal-one').on('click', function () {
   userScore += crystalOne;
   var pointsAdded = "+" + crystalOne;
@@ -37,19 +54,8 @@ $('#crystal-one').on('click', function () {
   $(this).animate({ opacity: .1 }, 300);
   $('#current-score').text("+" + crystalOne).css('z-index', 10);
 
-  setTimeout(function() {
-
-    $('.score-circle-current-click')
-    .removeClass('score-circle-current-click')
-    .addClass('score-circle-current');
-    $('#current-score-text-val').show();
-
-  }, 300);
-
-  $('.score-circle-current')
-    .removeClass('score-circle-current')
-    .addClass('score-circle-current-click');
-    $('#current-score-text-val').hide();
+  swapCircleStyle();
+  swapCircleStyleBack();
 
   $(this).animate({ opacity: 1 }, 300);
 
@@ -68,19 +74,8 @@ $('#crystal-two').on('click', function () {
   $(this).animate({ opacity: .1 }, 300);
   $('#current-score').text("+" + crystalTwo).css('z-index', 10);
 
-  setTimeout(function() {
-
-    $('.score-circle-current-click')
-    .removeClass('score-circle-current-click')
-    .addClass('score-circle-current');
-    $('#current-score-text-val').show();
-
-  }, 300);
-
-  $('.score-circle-current')
-    .removeClass('score-circle-current')
-    .addClass('score-circle-current-click');
-    $('#current-score-text-val').hide();
+  swapCircleStyle();
+  swapCircleStyleBack();
 
   $(this).animate({ opacity: 1 }, 300);
 
@@ -99,19 +94,8 @@ $('#crystal-three').on('click', function () {
   $(this).animate({ opacity: .1 }, 300);
   $('#current-score').text("+" + crystalThree).css('z-index', 10);
 
-  setTimeout(function() {
-
-    $('.score-circle-current-click')
-    .removeClass('score-circle-current-click')
-    .addClass('score-circle-current');
-    $('#current-score-text-val').show();
-
-  }, 300);
-
-  $('.score-circle-current')
-    .removeClass('score-circle-current')
-    .addClass('score-circle-current-click');
-  $('#current-score-text-val').hide();
+  swapCircleStyle();
+  swapCircleStyleBack();
 
   $(this).animate({ opacity: 1 }, 300);
 
@@ -130,19 +114,8 @@ $('#crystal-four').on('click', function () {
   $(this).animate({ opacity: .1 }, 300);
   $('#current-score').text("+" + crystalFour).css('z-index', 10);
 
-  setTimeout(function() {
-
-    $('.score-circle-current-click')
-    .removeClass('score-circle-current-click')
-    .addClass('score-circle-current');
-    $('#current-score-text-val').show();
-
-  }, 300);
-
-  $('.score-circle-current')
-    .removeClass('score-circle-current')
-    .addClass('score-circle-current-click');
-    $('#current-score-text-val').hide();
+  swapCircleStyle();
+  swapCircleStyleBack();
 
   $(this).animate({ opacity: 1 }, 300);
 
@@ -159,7 +132,6 @@ function update () {
   $('#wins').text(wins);
   $('#losses').text(losses);
 }
-
 
 function check () {
   if (userScore === goalNum) {
